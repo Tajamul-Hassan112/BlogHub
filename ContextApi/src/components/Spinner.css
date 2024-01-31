@@ -1,0 +1,25 @@
+/* Spinner.css */
+
+.spinner-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+ }
+ 
+ .spinner {
+   width: 56px;
+   height: 56px;
+   border-radius: 50%;
+   background: conic-gradient(#0000 10%, #474bff);
+   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+   animation: spinner-rotation 1s infinite linear;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ 
+ @keyframes spinner-rotation {
+   to {
+     transform: rotate(1turn);
+   }
+ }
+ 
